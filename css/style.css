@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*primary*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /*neutral*/
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line-bg: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(../fonts/Outfit/Outfit-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+body {
+    font-family: 'outfit';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--very-dark-blue-main-bg);
+}
+
+img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--soft-blue);
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 320px;
+    margin: 150px auto;
+    background-color: var(--very-dark-blue-card-bg);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card>p {
+    font-size: 1rem;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--very-dark-blue-line-bg);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-info>div {
+    flex: 1;
+    display: flex;
+}
+
+.card-info>div p,
+.card-info>div img {
+    margin-bottom: 0;
+}
+
+.card-price p,
+.card-time p {
+    font-size: .85rem;
+    color: var(--cyan);
+    margin-left: 6px;
+    margin-bottom: 0;
+}
+
+.card-time {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-time p {
+    color: var(--soft-blue);
+}
+
+.card-creator {
+    display: flex;
+    align-items: center;
+}
+
+.card-creator p {
+    flex: 1;
+    font-size: .95rem;
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+.card-creator img {
+    margin-bottom: 0;
+    max-width: 30px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.card-creator span {
+    color: var(--white);
+}
